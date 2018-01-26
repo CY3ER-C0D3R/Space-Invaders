@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92051C40-515D-43F1-A175-6B9EE35DD8F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Space_Invaders</RootNamespace>
+    <AssemblyName>Space Invaders</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransparentPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien_bullet_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien_bullet_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien_explosion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien_spaceship.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alien3_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_defender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black_defender_bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_defender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_defender_bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defender_explosion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_defender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_defender_bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_hit_border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_hit_border_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_hit_border_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space-invader-enemy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space_invaders_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space-invader-enemies.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invaderkilled.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EndPage_music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartPage_music.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MediaPlayer">
+      <Guid>{22D6F304-B0F6-11D0-94AB-0080C74C7E95}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMLSS">
+      <Guid>{C21E9CE5-B317-463B-A1B1-B5E36EED59D0}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPDXMLib">
+      <Guid>{73F0DD5C-D071-46B6-A8BF-897C84EAAC49}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLauncher">
+      <Guid>{5CB42160-CD7C-4806-9367-1C4A65153F4A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_death_explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\GameMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameMusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thud Sound Effect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UFO_explosion.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ufo_lowpitch.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaces_background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\space_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaces_background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaces_background4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spaces_background_earth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Synthesizer.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

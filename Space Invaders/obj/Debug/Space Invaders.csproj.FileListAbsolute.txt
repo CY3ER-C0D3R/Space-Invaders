@@ -1,0 +1,18 @@
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\bin\Debug\Space Invaders.exe.config
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\bin\Debug\Space Invaders.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\bin\Debug\Space Invaders.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Space Invaders.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Space_Invaders.Form1.resources
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Space_Invaders.Properties.Resources.resources
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Space Invaders.csproj.GenerateResource.Cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Space Invaders.exe
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Space Invaders.pdb
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Interop.WMPLib.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Space Invaders.csproj.ResolveComReference.cache
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\bin\Debug\Interop.WMPLib.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Interop.WMLSS.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Interop.WMPDXMLib.dll
+C:\Users\admin\Documents\Visual Studio 2015\Projects\Space Invaders\Space Invaders\obj\Debug\Interop.WMPLauncher.dll
